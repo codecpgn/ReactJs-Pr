@@ -3,7 +3,7 @@ import React from "react"
 export default function Navbar() {
     return (
         <nav>
-            <img src="../images/icon.jpg" />
+            <img src="../images/icon.jpg" className="nav--logo" />
         </nav>
     )
 }
