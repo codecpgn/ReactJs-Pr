@@ -1,6 +1,6 @@
 import React from "react"
 import Tool from "./components/Tool"
-function App(){
+const App=()=>{
     return(
         <div className="App">
         <Tool name="Ram" tool="figma"/>
