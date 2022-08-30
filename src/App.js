@@ -1,15 +1,15 @@
 import React, {useState} from "react";
 
-const state = useState;
-console.log(state);
 
-
-let count = 1;
- const IncNum =() =>{
-    
-    console.log("clicked" +count++);
- };
 const App =() =>{
+    const [count,setCount] = useState(0);
+
+    
+     const IncNum =() =>{
+        setCount(count + 1);
+       // console.log("clicked" +count++);
+     };
+
     return(
         <>
         <h1>{count}</h1>
