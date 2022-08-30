@@ -1,10 +1,21 @@
-import React from "react"
-import Tool from "./components/Tool"
-const App=()=>{
+import React, {useState} from "react";
+
+const state = useState;
+console.log(state);
+
+
+let count = 1;
+ const IncNum =() =>{
+    
+    console.log("clicked" +count++);
+ };
+const App =() =>{
     return(
-        <div className="App">
-        <Tool name="Ram" tool="figma"/>
-        </div>
-    )
-}
+        <>
+        <h1>{count}</h1>
+        <button onClick={IncNum}>click me</button>
+        </>
+    );
+
+};
 export default App;
