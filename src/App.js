@@ -1,21 +1,28 @@
-import React, {useState} from "react";
-
+import React, { useState } from "react";
 
 const App =() =>{
-    const [count,setCount] = useState(0);
+    const purple ="#8e44ad";
 
-    
-     const IncNum =() =>{
-        setCount(count + 1);
-       // console.log("clicked" +count++);
-     };
+        const [bg, setBg] = useState(purple);
+        const [Name , setName] =useState("Click me")
+
+    const bgChange = () =>{
+       // console.log('clicked');
+       let newBg = "#34495e";
+       setBg(newBg);
+
+       setName("ouch!! 🤷‍♂️🤷‍♂️");
+       
+    }
+
 
     return(
         <>
-        <h1>{count}</h1>
-        <button onClick={IncNum}>click me</button>
+            <div style={ { backgroundColor:"bg" }}>
+                <button onClick = {bgChange} >{Name}</button>
+            </div>
         </>
-    );
 
+    );
 };
-export default App;
+ export default App;
