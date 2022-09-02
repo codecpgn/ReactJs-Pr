@@ -14,12 +14,16 @@ const App =() =>{
        setName("ouch!! 🤷‍♂️🤷‍♂️");
        
     }
-
+    
+    const Bgback = () =>{
+        setBg(purple);
+        setName("return back😒");
+    }
 
     return(
         <>
             <div style={ { backgroundColor:"bg" }}>
-                <button onClick = {bgChange} >{Name}</button>
+                <button onClick = {bgChange} onDoubleClick={Bgback}>{Name}</button>
             </div>
         </>
 
