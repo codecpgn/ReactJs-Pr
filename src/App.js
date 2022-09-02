@@ -4,7 +4,7 @@ const App =() =>{
     const purple ="#8e44ad";
 
         const [bg, setBg] = useState(purple);
-        const [Name , setName] =useState("Click me")
+        const [Name , setName] =useState("Click me");
 
     const bgChange = () =>{
        // console.log('clicked');
@@ -17,13 +17,13 @@ const App =() =>{
     
     const Bgback = () =>{
         setBg(purple);
-        setName("return back😒");
+        setName("another step😒");
     }
 
     return(
         <>
-            <div style={ { backgroundColor:"bg" }}>
-                <button onMouseEnter = {bgChange} onMouseLeave={Bgback}>{Name}</button>
+            <div style={ { backgroundColor:bg }}>
+                <button onClick = {bgChange} onDoubleClick={Bgback}>{Name}</button>
             </div>
         </>
 
